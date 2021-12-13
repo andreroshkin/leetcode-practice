@@ -10,7 +10,7 @@
  * @return {number}
  */
 
-
+//через арифметическую прогрессию
 
 var missingNumber = function(nums) {
     const sum = nums.reduce((a, b) => a + b, 0);
