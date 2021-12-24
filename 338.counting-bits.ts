@@ -6,14 +6,16 @@
 
 // @lc code=start
 function countBits(n: number): number[] {
-    // let counter: number = 0;
     const bitsNumber: number[] = [];
-    while (n) {
-        // let counter = counter + (n & 1);
-        n = n >> 1;
-        bitsNumber.push(n);
+    for (let index = 0; index <= n; index++) {
+        let counter: number = 0;
+        let currentNumber = index;
+        while (currentNumber) {
+            counter = counter + (currentNumber & 1);
+            currentNumber = currentNumber >> 1;
+        }
+        bitsNumber.push(counter);
     }
-
     return bitsNumber;
 };
 // @lc code=end
