@@ -7,30 +7,15 @@
 // @lc code=start
 // Sieve of Eratosthenes
 function countPrimes(n: number): number {
-    let primesCounter: number = 0;
-    if (n <= 2) return primesCounter;
-    const primes: boolean[] = [];
-    const upperLimit: number = Math.sqrt(n);
-
-    for (let index = 0; index < n; index++) {
-        primes.push(true);
+    let seen: boolean[] = new Array(n).fill(false);
+    let primesCounter: number = 0
+    for (let num: number = 2; num < n; num++) {
+        if (seen[num]) continue
+        primesCounter++
+        for (let mult: number = num * num; mult < n; mult += num)
+            seen[mult] = true
     }
-
-    for (let index = 2; index < upperLimit; index++) {
-        if (primes[index]) {
-            for (let j = index * index; j < n; j += index) {
-                primes[j] = false;
-            }
-        }
-    }
-
-    for (const number of primes) {
-        if (number) {
-            primesCounter++
-        }
-    }
-
-    return primesCounter;
+    return primesCounter
 };
 // @lc code=end
 
