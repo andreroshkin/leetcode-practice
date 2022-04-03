@@ -1,0 +1,27 @@
+{
+  "name": "leetcode-practice",
+  "version": "1.0.0",
+  "description": "Practice solving problems with leetcode in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreroshkin/leetcode-practice.git"
+  },
+  "author": "Eroshkin A",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreroshkin/leetcode-practice/issues"
+  },
+  "homepage": "https://github.com/andreroshkin/leetcode-practice#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "husky": "^7.0.4",
+    "prettier": "2.6.2"
+  }
+}

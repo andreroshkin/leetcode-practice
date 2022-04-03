@@ -1,0 +1,4 @@
+{
+  "*": ["prettier --write --config ./.prettierrc.json"],
+  "*.{js,ts}": ["eslint --fix --max-warnings 3000"]
+}
