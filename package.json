@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "prettier --write .",
+    "lint": "eslint ./*.ts",
+    "lint:fix": "eslint ./*.ts --fix"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
     "@typescript-eslint/parser": "^5.17.0",
     "eslint": "^8.12.0",
     "husky": "^7.0.4",
+    "lint-staged": "^12.3.7",
     "prettier": "2.6.2"
   }
 }
