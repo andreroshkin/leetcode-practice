@@ -16,9 +16,13 @@ function sortedSquares(nums: number[]): number[] {
 
     while (start <= end) {
         if (nums[start] ** 2 > nums[end] ** 2) {
-            result[position--] = nums[start++] ** 2;
+            result[position] = nums[start] ** 2;
+            position = position - 1;
+            start = start + 1;
         } else {
-            result[position--] = nums[end--] ** 2;
+            result[position] = nums[end] ** 2;
+            position = position - 1;
+            end = end - 1;
         }
     }
 
