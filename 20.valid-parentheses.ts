@@ -7,10 +7,10 @@
 // @lc code=start
 function isValid(s: string): boolean {
     const stack = [];
-    const closeToOpen = { '}': '{', ')': '(', ']': '[' };
+    const brackets = { '}': '{', ')': '(', ']': '[' };
     for (const sym of s) {
-        if (sym in closeToOpen) {
-            if (stack && stack[stack.length - 1] === closeToOpen[sym]) {
+        if (sym in brackets) {
+            if (stack && stack[stack.length - 1] === brackets[sym]) {
                 stack.pop();
             } else {
                 return false;
