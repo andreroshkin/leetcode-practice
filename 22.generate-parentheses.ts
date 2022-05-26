@@ -21,7 +21,7 @@ function generate(result: string[], s: string, open: number, close: number, n: n
 }
 
 function generateParenthesis(n: number): string[] {
-    const result = [];
+    const result: string[] = [];
     generate(result, '', 0, 0, n);
     return result;
 }
