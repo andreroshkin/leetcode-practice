@@ -13,7 +13,7 @@ Practice solving problems with leetcode in javascript
 -   [x] [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
 -   [x] [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
 -   [x] [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
--   [ ] [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+-   [x] [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
 -   [x] [Counting Bits](https://leetcode.com/problems/counting-bits/)
 -   [x] [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/)
 -   [x] [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/)
