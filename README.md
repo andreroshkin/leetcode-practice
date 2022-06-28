@@ -21,7 +21,7 @@ Practice solving problems with leetcode in javascript
 -   [x] [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/)
 -   [x] [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
 -   [x] [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)
--   [ ] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+-   [x] [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
 -   [ ] [Meeting Rooms](https://leetcode.com/problems/meeting-rooms)
 -   [x] [Binary Search](https://leetcode.com/problems/binary-search/)
 -   [x] [Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
