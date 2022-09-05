@@ -5,26 +5,19 @@
  */
 
 // @lc code=start
-function subsets(nums: number[]): number[][] {
-    const result = [];
-    const current = [];
 
-    const dfs = (nums, n, start, current, result) => {
-        if (current.length === n) {
-            result.push([...current]);
-            return;
-        }
-
-        for (let i = start; i < nums.length; i++) {
-            current.push(nums[i]);
-            dfs(nums, n, i + 1, current, result);
-            current.pop();
-        }
-    };
-
-    for (let i = 0; i <= nums.length; i++) {
-        dfs(nums, i, 0, current, result);
+function backtrack(list, tempList, nums, start) {
+    list.push([...tempList]);
+    for (let i = start; i < nums.length; i++) {
+        tempList.push(nums[i]);
+        backtrack(list, tempList, nums, i + 1);
+        tempList.pop();
     }
-    return result;
+}
+
+function subsets(nums: number[]): number[][] {
+    const list = [];
+    backtrack(list, [], nums, 0);
+    return list;
 }
 // @lc code=end
