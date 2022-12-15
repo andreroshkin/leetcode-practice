@@ -60,7 +60,7 @@ Practice solving problems with leetcode in javascript
 -   [ ] [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
 -   [ ] [Combination Sum III](https://leetcode.com/problems/combination-sum-iii/)
 -   [x] [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
--   [ ] [Target Sum](https://leetcode.com/problems/target-sum/)
+-   [x] [Target Sum](https://leetcode.com/problems/target-sum/)
 -   [ ] [Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning/)
 -   [ ] [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)
 -   [ ] [Generalized Abbreviation](https://leetcode.com/problems/generalized-abbreviation/)
