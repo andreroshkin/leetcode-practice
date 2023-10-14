@@ -41,7 +41,7 @@ Practice solving problems with leetcode in javascript
 -   [x] [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/)
 -   [ ] [Index Pairs of a String](https://leetcode.com/problems/index-pairs-of-a-string/)
 -   [x] [Majority Element](https://leetcode.com/problems/majority-element/)
--   [ ] [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/)
+-   [x] [Convert 1D Array Into 2D Array](https://leetcode.com/problems/convert-1d-array-into-2d-array/)
 -   [x] [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/)
 -   [x] [Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)
 -   [x] [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/)

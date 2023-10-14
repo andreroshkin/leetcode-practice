@@ -6,18 +6,18 @@
 
 // @lc code=start
 function construct2DArray(original: number[], m: number, n: number): number[][] {
-    const array2d: number[][] = [];
-    const rowsNumber = m;
-    const columnsNumber = n;
-
-    if (1 >= rowsNumber || 1 >= columnsNumber) {
+    let total = original.length;
+    
+    if (total !== m * n) {
         return [];
     }
 
-    while (original.length) {
-        array2d.push(original.splice(0, columnsNumber));
+    let result: number[][] = new Array(m).fill(0).map(() => new Array(n).fill(0));
+
+    for (let index = 0; index < original.length; index++) {
+        result[Math.floor(index / n)][index % n] = original[index];
     }
 
-    return array2d;
+    return result;
 }
 // @lc code=end
