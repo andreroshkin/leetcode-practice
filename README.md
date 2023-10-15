@@ -84,7 +84,7 @@ Practice solving problems with leetcode in javascript
 -   [ ] [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 -   [ ] [Remove Nth Node From End Of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 -   [x] [Sort List](https://leetcode.com/problems/sort-list/)
--   [ ] [Reorder List](https://leetcode.com/problems/reorder-list/)
+-   [x] [Reorder List](https://leetcode.com/problems/reorder-list/)
 -   [ ] [Clone Graph](https://leetcode.com/problems/clone-graph/)
 -   [ ] [Pacific Atlantic Water Flow](https://leetcode.com/problems/pacific-atlantic-water-flow/)
 -   [ ] [Number of Islands](https://leetcode.com/problems/number-of-islands/)
