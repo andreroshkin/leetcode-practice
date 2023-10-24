@@ -48,7 +48,7 @@ Practice solving problems with leetcode in javascript
 -   [ ] [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/)
 -   [ ] [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/)
 -   [x] [Rotate Image](https://leetcode.com/problems/rotate-image/)
--   [ ] [Word Search](https://leetcode.com/problems/word-search/)
+-   [x] [Word Search](https://leetcode.com/problems/word-search/)
 -   [ ] [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/)
 -   [ ] [Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation/)
 -   [ ] [Subsets](https://leetcode.com/problems/subsets/)
