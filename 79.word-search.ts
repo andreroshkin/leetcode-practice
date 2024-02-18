@@ -20,7 +20,7 @@ function DFS(board, row, col, rows, cols, word, cur) {
     if (col >= cols || col < 0) return false;
 
     const item = board[row][col];
-    
+
     // Если символ в текущей ячейке доски (board[row][col]) не совпадает с текущим символом, который мы ищем в слове (word[cur]), возвращается false.
     if (item !== word[cur]) return false;
 
@@ -31,10 +31,7 @@ function DFS(board, row, col, rows, cols, word, cur) {
     board[row][col] = null;
 
     // В остальных случаях мы продолжаем рекурсивный поиск, двигаясь в четырех возможных направлениях (вверх, вниз, влево, вправо), вызывая DFS для каждого направления с увеличением cur на 1.
-    const res = DFS(board, row + 1, col, rows, cols, word, cur + 1) ||
-        DFS(board, row - 1, col, rows, cols, word, cur + 1) ||
-        DFS(board, row, col + 1, rows, cols, word, cur + 1) ||
-        DFS(board, row, col - 1, rows, cols, word, cur + 1);
+    const res = DFS(board, row + 1, col, rows, cols, word, cur + 1) || DFS(board, row - 1, col, rows, cols, word, cur + 1) || DFS(board, row, col + 1, rows, cols, word, cur + 1) || DFS(board, row, col - 1, rows, cols, word, cur + 1);
 
     board[row][col] = item;
 
@@ -60,5 +57,5 @@ function exist(board: string[][], word: string): boolean {
     }
 
     return false;
-};
+}
 // @lc code=end

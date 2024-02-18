@@ -14,9 +14,9 @@ function romanToInt(s: string): number {
         C = 100,
         D = 500,
         M = 1000,
-    };
+    }
 
-    let result: number = 0;
+    let result = 0;
 
     for (let index = 0; index < s.length; index++) {
         const current: number = Roman[s[index]];

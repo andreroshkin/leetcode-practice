@@ -13,7 +13,7 @@ function rob(nums: number[]): number {
         return nums[0];
     }
 
-    let profits: number[] = [];
+    const profits: number[] = [];
     profits[0] = nums[0];
     profits[1] = Math.max(nums[0], nums[1]);
     for (let index = 2; index < nums.length; index++) {

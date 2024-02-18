@@ -22,26 +22,25 @@ function getMid(head: ListNode) {
 
     while (fast && fast.next) {
         fast = fast.next.next;
-        slow = slow.next;   
+        slow = slow.next;
     }
 
     return slow;
 }
 
 function merge(list1: ListNode, list2: ListNode) {
-    let dummy = new ListNode();
+    const dummy = new ListNode();
     let tail = dummy;
     while (list1 && list2) {
         if (list1.val < list2.val) {
             tail.next = list1;
             list1 = list1.next;
-        }
-        else {
+        } else {
             tail.next = list2;
             list2 = list2.next;
         }
         tail = tail.next;
-    }    
+    }
 
     if (list1) {
         tail.next = list1;
@@ -61,7 +60,7 @@ function sortList(head: ListNode | null): ListNode | null {
 
     let left = head;
     let right = getMid(head);
-    let tmp = right.next;
+    const tmp = right.next;
     right.next = null;
     right = tmp;
 
@@ -69,6 +68,5 @@ function sortList(head: ListNode | null): ListNode | null {
     right = sortList(right);
 
     return merge(left, right);
-};
+}
 // @lc code=end
-

@@ -6,11 +6,11 @@
 
 // @lc code=start
 function search(nums: number[], target: number): number {
-    let start: number = 0;
+    let start = 0;
     let end: number = nums.length - 1;
 
     while (start <= end) {
-        let middle: number = Math.round((start + end) / 2);
+        const middle: number = Math.round((start + end) / 2);
         if (nums[middle] === target) {
             return middle;
         } else if (nums[middle] < target) {
@@ -21,6 +21,5 @@ function search(nums: number[], target: number): number {
     }
 
     return -1;
-};
+}
 // @lc code=end
-

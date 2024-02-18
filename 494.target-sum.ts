@@ -6,12 +6,10 @@
 
 // @lc code=start
 
-
-
 function findTargetSumWays(nums: number[], target: number): number {
     let count = 0;
-    
-    function calculate(nums: number[], index: number, sum: number, target: number){
+
+    function calculate(nums: number[], index: number, sum: number, target: number) {
         if (index === nums.length) {
             if (sum === target) {
                 count++;
@@ -24,5 +22,5 @@ function findTargetSumWays(nums: number[], target: number): number {
 
     calculate(nums, 0, 0, target);
     return count;
-};
+}
 // @lc code=end

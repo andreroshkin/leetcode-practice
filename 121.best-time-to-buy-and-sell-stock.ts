@@ -6,13 +6,12 @@
 
 // @lc code=start
 function maxProfit(prices: number[]): number {
-    let maxProfit: number = 0;
-    let currentMin: number = prices[0]; 
+    let maxProfit = 0;
+    let currentMin: number = prices[0];
     for (const price of prices) {
         maxProfit = Math.max(maxProfit, price - currentMin);
-        currentMin = Math.min(currentMin, price)
+        currentMin = Math.min(currentMin, price);
     }
     return maxProfit;
-};
+}
 // @lc code=end
-

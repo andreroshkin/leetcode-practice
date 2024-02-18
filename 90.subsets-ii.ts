@@ -31,11 +31,10 @@ function subsetsWithDup(nums: number[]): number[][] {
         }
 
         backtrack(index + 1, subset);
-    }
+    };
 
     backtrack(0, []);
 
     return result;
-};
+}
 // @lc code=end
-

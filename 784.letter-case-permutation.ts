@@ -7,7 +7,7 @@
 // @lc code=start
 function letterCasePermutation(s: string): string[] {
     const result: string[] = [];
-    
+
     const backtrack = (index: number, path: string[]) => {
         // Если index достигает длины строки s, это означает, что мы завершили текущую частичную перестановку, и мы добавляем ее в массив результатов result.
         if (index === s.length) {
@@ -27,11 +27,10 @@ function letterCasePermutation(s: string): string[] {
             backtrack(index + 1, path);
             path.pop();
         }
-    }
+    };
 
     backtrack(0, []);
 
     return result;
-};
+}
 // @lc code=end
-

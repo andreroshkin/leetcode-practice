@@ -20,6 +20,5 @@ function longestConsecutive(nums: number[]): number {
     }
 
     return longest;
-};
+}
 // @lc code=end
-

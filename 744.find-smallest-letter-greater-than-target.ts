@@ -7,7 +7,6 @@
 // @lc code=start
 function nextGreatestLetter(letters: string[], target: string): string {
     const indexGreatestLetter: number = letters.findIndex((letter) => letter > target);
-    return letters[indexGreatestLetter === -1 ? 0 :  indexGreatestLetter]
-};
+    return letters[indexGreatestLetter === -1 ? 0 : indexGreatestLetter];
+}
 // @lc code=end
-
